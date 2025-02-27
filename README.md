@@ -12,10 +12,10 @@ amantran-group
 ┣  assets
 ┃ ┣  styles.css
 ┃ ┣  script.js
-┣ 📂 images
-┣ 📄 index.html
-┣ 📄 README.md
-┗ 📄 LICENSE
+┣  images
+┣  index.html
+┣  README.md
+┗  LICENSE
 
 
 ## 🛠 Technologies Used
