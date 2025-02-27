@@ -10,11 +10,17 @@ This is a **frontend website** for Amantran Group, a hotel and hospitality busin
 ##  Project Structure
 amantran-group
 ┣  assets
+
 ┃ ┣  styles.css
+
 ┃ ┣  script.js
+
 ┣  images
+
 ┣  index.html
+
 ┣  README.md
+
 ┗  LICENSE
 
 
