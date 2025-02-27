@@ -9,6 +9,7 @@ This is a **frontend website** for Amantran Group, a hotel and hospitality busin
 
 ##  Project Structure
 amantran-group
+
 ┣  assets
 
 ┃ ┣  styles.css
@@ -24,7 +25,7 @@ amantran-group
 ┗  LICENSE
 
 
-## 🛠 Technologies Used
+##  Technologies Used
 - **HTML, CSS, JavaScript**
 - **Bootstrap** for UI components
 
