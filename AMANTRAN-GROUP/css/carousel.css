@@ -1,0 +1,94 @@
+/* Carousel styles */
+.carousel {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 160px;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-text h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-text p {
+    font-size: 2rem;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.carousel-control.prev {
+    left: 1rem;
+}
+
+.carousel-control.next {
+    right: 1rem;
+}
+
+.carousel-btn {
+    border: 2px solid var(--red);
+    background-color: var(--red);
+    border-radius: 4px;
+    /* margin: 1rem; */
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.carousel-btn:hover {
+    background-color: #920c22;
+    border-color: #920c22;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+     .carousel-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .carousel-text p {
+        font-size: 1.4rem;
+    } 
+}

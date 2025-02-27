@@ -1,0 +1,14 @@
+.contact-section{
+    background-color: #eaeaea;
+}
+
+.contact-info{
+    background-color: #fcfcfc;
+    margin-left: 3.125rem;
+}
+
+@media (max-width: 768px) {
+    .contact-info{
+        margin: 0 auto;
+    }
+}

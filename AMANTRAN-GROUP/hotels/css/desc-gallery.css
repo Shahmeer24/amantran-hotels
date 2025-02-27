@@ -1,0 +1,143 @@
+.credit {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    color: inherit;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+
+.option {
+    position: relative;
+    overflow: hidden;
+    min-height: 5rem;
+    margin: 0.5rem 0;
+    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    border-radius: 1rem;
+}
+
+.option.active {
+    flex-grow: 1;
+    min-height: 12rem;
+}
+
+.option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.option.active .label {
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.option.active .label .info>div {
+    left: 0;
+    opacity: 1;
+}
+
+.option:not(.active) .shadow {
+    bottom: -2rem;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+
+.option:not(.active) .label {
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.option:not(.active) .label .info>div {
+    left: 1rem;
+    opacity: 0;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.label {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 2.5rem;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--defaultBackground);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+    color: white;
+    white-space: pre;
+}
+
+.info>div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sub {
+    transition-delay: 0.1s;
+}
+
+@media screen and (min-width: 480px) {
+    .options {
+        flex-direction: row;
+    }
+
+    .option {
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .option {
+        min-width: 5rem;
+    }
+
+    .option.active {
+        max-width: 600px;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
+    body {
+        padding: 2rem;
+    }
+
+    .option {
+        margin: 0 1rem;
+    }
+} */

@@ -1,0 +1,32 @@
+ * {
+   /*Remove the blue halo while clicking*/
+   -webkit-tap-highlight-color: transparent;
+   tap-highlight-color: transparent;
+ }
+
+ :root {
+   --dark-blue: #060e21;
+   --red: #a9132c;
+   --yellow-brown: #eca03e;
+ }
+
+ body {
+   font-family: "Comfortaa", Helvetica, sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   margin: 0;
+   padding: 0;
+   /* padding-top: 60px; */
+ }
+
+ section {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: all 0.5s ease;
+ }
+
+ section.active {
+   opacity: 1;
+   transform: translateY(0);
+ }

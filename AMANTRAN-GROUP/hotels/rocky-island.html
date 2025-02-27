@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="amantran, hotel, hotels, tourism, rooms, sights, services, rocky-island, rocky, island"
+      name="keywords"
+    />
+    <meta content="" name="description" />
+
+    <title>Rocky Island | Amantran Group</title>
+    <link href="/images/logo-img-1.png" rel="icon" type="image/x-icon" />
+
+    <!--Icon Files-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!--  Google Fonts Files  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  Loader Animation Files  -->
+    <link rel="stylesheet" href="/css/css-loader.css" />
+    <script src="/js/component.js"></script>
+    <script src="/js/js-loader.js"></script>
+
+    <!--  CSS Files  -->
+    <link rel="stylesheet" href="/css/mainstyle.css" />
+    <link rel="stylesheet" href="/css/about-us.css" />
+    <link rel="stylesheet" href="/css/carousel.css" />
+    
+
+    <!--  New CSS Files  -->
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/description.css" />
+    
+  </head>
+
+  <body>
+    <!--  Page Loader  -->
+    <custom-page-transition
+      class="explicit-styling"
+      id="hideElement"
+    ></custom-page-transition>
+
+    <!--  HEADER SECTION  -->
+
+    <!-- Navbar -->
+    <nav class="navbar" id="home">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo-img-1.png" alt="Amantran-Group" />
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/index.html#section-about">ABOUT US</a></li>
+          <li class="dropdown">
+            <a href="#hotels"
+              >OUR HOTELS<span class="dropdown-arrow">&#9662;</span></a
+            >
+            <ul class="dropdown-content">
+              <li><a href="tarapith.html">Tarapith</a></li>
+              <li><a href="chilapata.html">Chilapata</a></li>
+              <li><a href="rocky-island.html">Rocky Island</a></li>
+              <li><a href="sundarban.html">Sundarban</a></li>
+            </ul>
+          </li>
+          <li><a href="#section-price">PRICING</a></li>
+          <li><a href="#section-contact">CONTACT</a></li>
+          <li><a href="/index.html#section-team">TEAM</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  MAIN IMAGE SECTION  -->
+
+    <section
+      class="hero-section"
+      id="section-main"
+      style="background-image: url('/images/rocky-island/4.jpg')"
+    >
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Your Gateway to<br />Unforgettable Adventures
+        </h1>
+        <p class="hero-subtitle">
+          Discover, Explore, Experience in Rocky Island
+        </p>
+
+        <a href="#" class="cta-button" onclick="confirmFunction()"
+          >Book Your Stay</a
+        >
+      </div>
+    </section>
+
+    <!--  DESCRIPTION SECTION  -->
+
+    <section class="hotel-description" id="section-description">
+      <div class="description-container">
+        <div class="description-content">
+          <h2 class="description-title">Discover Elegance</h2>
+          <div class="description-divider"></div>
+          <p class="description-text">
+            Welcome to a world where luxury meets comfort. Our hotel stands as
+            an oasis of tranquility in the bustling cityscape, offering you an
+            unparalleled experience of sophistication and warmth.
+          </p>
+          <p class="description-text">
+            From our meticulously designed suites to our award-winning
+            restaurants, every corner of our establishment is crafted to delight
+            your senses and exceed your expectations.
+          </p>
+        </div>
+        <div class="description-image">
+          <div class="options">
+            <div
+              class="option active"
+              style="--optionBackground: url('/images/rocky-island/2.jpg')"
+            >
+              <div class="shadow"></div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url('/images/rocky-island/3.jpg')"
+            >
+              <div class="shadow"></div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url('/images/rocky-island/5.jpg')"
+            >
+              <div class="shadow"></div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url('/images/rocky-island/6.jpg')"
+            >
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  GALLERY SECTION  -->
+
+    <section class="gallery-section" id="section-gallery">
+      <h2 class="gallery-title">Have a Look</h2>
+      <center><div class="description-divider"></div></center>
+      <div class="gallery-container">
+        <div class="gallery-item wide">
+          <img src="/images/rocky-island/1.jpg" alt="Image 1" fetchpriority="low" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/rocky-island/7.jpg" alt="Image 2" fetchpriority="low" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/rocky-island/5.jpg" alt="Image 3" fetchpriority="low" loading="lazy"/>
+        </div>
+        <div class="gallery-item tall">
+          <img src="/images/rocky-island/2.jpg" alt="Image 4" fetchpriority="low" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/rocky-island/6.jpg" alt="Image 5" fetchpriority="low" loading="lazy"/>
+        </div>
+        <div class="gallery-item wide">
+          <img src="/images/rocky-island/3.jpg" alt="Image 6" fetchpriority="low" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/rocky-island/4.jpg" alt="Image 7" fetchpriority="low" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+    <!--  Full-Screen Image Modal  -->
+    <div id="imageModal" class="modal">
+      <img class="modal-image-content" id="modalImage" />
+    </div>
+
+    <!--  PRICES SECTION (booking button)  -->
+
+    <section class="pricing-section" id="section-price">
+      <div class="pricing-container">
+        <h2 class="pricing-title">Our Prices</h2>
+        <center><div class="description-divider"></div></center>
+        <p class="pricing-description">
+          Experience luxury without breaking the bank. Our rooms are designed to
+          cater to every need, from solo travelers to families, ensuring a
+          comfortable stay at competitive prices. Book directly with us for the
+          best rates and exclusive perks.
+        </p>
+        <div class="services-highlights">
+          <span class="service-tag">Free Wi-Fi</span>
+          <span class="service-tag">24/7 Room Service</span>
+          <span class="service-tag">Fitness Center</span>
+          <span class="service-tag">Spa</span>
+          <span class="service-tag">Pool</span>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3 class="room-type">Standard Room</h3>
+            <p class="price">₹5,000<span class="per-night">/night</span></p>
+            <ul class="room-features">
+              <li>Queen-size bed</li>
+              <li>City view</li>
+              <li>32" LED TV</li>
+            </ul>
+            <button class="book-now-btn" onclick="confirmFunction()">
+              Book Now
+            </button>
+          </div>
+          <div class="price-card featured">
+            <h3 class="room-type">Deluxe Suite</h3>
+            <p class="price">₹8,500<span class="per-night">/night</span></p>
+            <ul class="room-features">
+              <li>King-size bed</li>
+              <li>Ocean view</li>
+              <li>55" Smart TV</li>
+              <li>Private balcony</li>
+            </ul>
+            <button class="book-now-btn" onclick="confirmFunction()">
+              Book Now
+            </button>
+          </div>
+          <div class="price-card">
+            <h3 class="room-type">Family Room</h3>
+            <p class="price">₹12,000<span class="per-night">/night</span></p>
+            <ul class="room-features">
+              <li>2 Queen-size beds</li>
+              <li>Garden view</li>
+              <li>Kids play area</li>
+              <li>Kitchenette</li>
+            </ul>
+            <button class="book-now-btn" onclick="confirmFunction()">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  LOCATION SECTION  -->
+
+    <section
+      id="section-contact"
+      class="contact-section"
+    >
+      <h2 class="section-title">Locate Us</h2>
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3 style="color: #555">Get in Touch</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone" style="color: var(--red)"></i>
+              <p style="color: #555">+91 9147389028</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope" style="color: var(--red)"></i>
+              <p style="color: #555">amantranhotels@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt" style="color: var(--red)"></i>
+              <p style="color: #555">
+                Matelli-Samsing Rd, Rocky Island, Kilkote Tea Garden, dooars, West Bengal 735223
+              </p>
+            </div>
+          </div>
+
+          <div class="map-container" style="height: 19rem">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5594.359749721215!2d88.36361499713385!3d22.55998677381826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276fecd563a27%3A0x7f7424d103ae87eb!2sAmantran%20Group!5e0!3m2!1sen!2sin!4v1719995772643!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER SECTION  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Contact Us - Main</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p style="text-align: center">+91 9147389028</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p style="text-align: center">amantranhotels@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                4, Dr Suresh Sarkar Road, Moulali, Amantran House(RTC House), 4th floor, Kolkata, West Bengal 700014
+              </p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.html#section-about">About Us</a></li>
+              <li><a href="/index.html#section-services">Services</a></li>
+              <li><a href="/index.html#section-team">Team</a></li>
+              <li><a href="#privacy" id="privacyLink">Privacy Policy</a></li>
+              <li><a href="#terms" id="termsLink">Terms & Conditions</a></li>
+              <li><a href="/index.html#section-contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-hotels">
+            <h3>Our Hotels</h3>
+            <ul>
+              <li><a href="tarapith.html">Tarapith</a></li>
+              <li><a href="chilapata.html">Chilapata</a></li>
+              <li><a href="rocky-island.html">Rocky Island</a></li>
+              <li><a href="sundarban.html">Sundarban</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61561458937911" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/amantranhotelsresorts/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p id="copyright">&copy; 2024 Amantran Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--  CSS Files  -->
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/hotel-cards.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/reviews.css" />
+    <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/team.css" />
+    <link rel="stylesheet" href="/css/back-to-top.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+
+    <link rel="stylesheet" href="css/desc-gallery.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+    <link rel="stylesheet" href="css/hotel-contact.css" />
+
+    <!--  JavaScript Files  -->
+    <script src="/js/main.js"></script>
+    <script src="/js/back-to-top.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/counter.js"></script>
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/video-play.js"></script>
+    <script src="/js/modal-privacy.js"></script>
+    <script src="/js/modal-terms.js"></script>
+
+    <!--  New JavaScript Files  -->
+    <script src="js/gallery.js"></script>
+
+    <!--BACK TO TOP BUTTON-->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
+
+    <!--MODAL SECTION - TERMS & CONDITIONS-->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Terms & Conditions</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>These are our Terms and Conditions:</p>
+          
+          <p>
+            1. All reservations are subject to availability and confirmation.
+          </p>
+          <p>
+            2. Rates are per room, per night, and are subject to change without
+            notice.
+          </p>
+          <p>
+            3. Specific cancellation policies may vary by hotel and rate type.
+          </p>
+          <p>
+            4. The booking company is not responsible for any loss, damage, or
+            theft of personal belongings at the hotel. Guests are liable for any
+            damage caused to hotel property during their stay.
+          </p>
+          <p>
+            5. Personal information provided during booking will be used in
+            accordance with our privacy policy.
+          </p>
+          <p>
+            6. The company is not liable for any failure to perform its
+            obligations in conditions beyond its control (e.g., natural
+            disasters, government actions).
+          </p>
+          <p>
+            7. Any complaints should be raised with the hotel during the stay or
+            with our customer service team within 14 days of check-out.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  MODAL SECTION - PRIVACY POLICY  -->
+    <div id="privacyModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Privacy Policy</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>Our Privacy Policy:</p>
+          <p>
+            1. We respect your privacy and are committed to protecting your
+            personal data.
+          </p>
+          <p>
+            2. We collect only necessary information to provide our services.
+          </p>
+          <p>
+            3. Your data is securely stored and never shared with third parties
+            without your consent.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  Gallery Script  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(".option").click(function () {
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
+  </body>
+</html>

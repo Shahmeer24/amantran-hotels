@@ -1,0 +1,34 @@
+body{
+    overflow : hidden;
+}
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 3px;
+    background: 
+      radial-gradient(farthest-side,#ac1818 95%,#0000) 50% 0/12px 12px no-repeat,
+      radial-gradient(farthest-side,#0000 calc(100% - 5px),#ac1818 calc(100% - 4px)) content-box;
+    animation: l6 2s infinite ;
+  }
+  @keyframes l6 {to{transform: rotate(1turn)}}
+
+  .explicit-styling{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 100000;
+    transition: opacity 1s ease-out;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+    pointer-events: none;
+}
+  

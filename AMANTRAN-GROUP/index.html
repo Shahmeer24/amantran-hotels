@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="amantran, hotel, hotels, tourism, rooms, sights, services"
+      name="keywords"
+    />
+    <meta content="" name="description" />
+
+    <title>Home | Amantran Group</title>
+    <link href="images/logo-img-1.png" rel="icon" type="image/x-icon" />
+
+    <!--Icon Files-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!--  Google Fonts Files  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  Loader Animation Files  -->
+    <link rel="stylesheet" href="css/css-loader.css" />
+    <script src="js/component.js"></script>
+    <script src="js/js-loader.js"></script>
+
+    <!--  CSS Files  -->
+    <link rel="stylesheet" href="css/mainstyle.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    
+  </head>
+
+  <body>
+    
+    <!--  Page Loader  -->
+    <custom-page-transition
+      class="explicit-styling"
+      id="hideElement"
+    ></custom-page-transition>
+
+    <!--  HEADER SECTION  -->
+
+    <!-- Navbar -->
+    <nav class="navbar" id="home">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-img-1.png" alt="Amantran-Group"/>
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#section-about">ABOUT US</a></li>
+          <li class="dropdown">
+            <a href="#hotels"
+              >OUR HOTELS<span class="dropdown-arrow">&#9662;</span></a
+            >
+            <ul class="dropdown-content">
+              <li><a href="hotels/tarapith.html">Tarapith</a></li>
+              <li><a href="hotels/chilapata.html">Chilapata</a></li>
+              <li><a href="hotels/rocky-island.html">Rocky Island</a></li>
+              <li><a href="hotels/sundarban.html">Sundarban</a></li>
+            </ul>
+          </li>
+          <li><a href="#section-contact">CONTACT</a></li>
+          <li><a href="#section-team">TEAM</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img src="images/tarapith/10.jpg" alt="" />
+        <div class="carousel-text">
+          <h2>Explore a range of Luxury Hotels</h2>
+          <p>Experience comfort like never befores</p>
+          <a href="#section-hotels" class="carousel-btn">Explore More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/chilapata/5.jpg" alt="" />
+        <div class="carousel-text">
+          <h2>Unforgettable Stays</h2>
+          <p>Create memories that last a lifetime</p>
+          <a href="#section-hotels" class="carousel-btn">Explore More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/tarapith/1.jpg" alt="" />
+        <div class="carousel-text">
+          <h2>Elegant Residency</h2>
+          <p>Enjoy comfort with our exclusive services</p>
+          <a href="#section-hotels" class="carousel-btn">Explore More</a>
+        </div>
+      </div>
+      <a href="#" class="carousel-control prev" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a href="#" class="carousel-control next" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <!--  ABOUT US SECTION  -->
+    <section class="about-us" id="section-about">
+      <div class="container">
+        <div class="about-text">
+          <h2>About Us<span class="bar-design"> ____ </span></h2>
+          <h1>
+            Welcome to
+            <h1 style="color: var(--red); margin: 0; font-weight: bolder">
+              AMANTRAN
+            </h1>
+          </h1>
+          <p>
+            With 46 years of experience in hospitality, we pride ourselves on
+            providing unforgettable stays for our guests. Our dedication to
+            excellence and attention to detail ensure that every moment of your
+            stay is perfect.
+          </p>
+          <p>
+            From our stunning locations to our world-class amenities, we strive
+            to exceed your expectations at every turn. Discover the difference
+            of true luxury with us.
+          </p>
+          <div class="counters">
+            <div class="counter-box-outside">
+              <div class="counter-box-inside">
+                <span class="counter" data-target="200">0</span
+                ><span class="counter-plus">+</span>
+                <b><p>Rooms</p></b>
+              </div>
+            </div>
+            <div class="counter-box-outside">
+              <div class="counter-box-inside">
+                <span class="counter" data-target="600">0</span
+                ><span class="counter-plus">+</span>
+                <b><p>Staff</p></b>
+              </div>
+            </div>
+            <div class="counter-box-outside">
+              <div class="counter-box-inside">
+                <span class="counter" data-target="10000">0</span
+                ><span class="counter-plus">+</span>
+                <b><p>Clients</p></b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="about-video">
+          <div class="video-container">
+            <img
+              src="images/logo-img.jpg"
+              alt="Video Thumbnail"
+              class="video-thumbnail"
+            />
+            <button class="play-btn">▶</button>
+            <button class="pause-btn" style="display: none">❚❚</button>
+            <video id="about-video" src="images/vid/SampleVideo.mp4"></video>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!--  HOTELS SECTION  -->
+    <section class="featured-hotels" id="section-hotels">
+      <h2 class="section-title">Our Featured Hotels</h2>
+
+      <div class="hotel-cards">
+        <div class="hotel-card">
+          <div class="hotel-image">
+            <img src="images/tarapith/13.jpg" alt="Tarapith" fetchpriority="low" loading="lazy" />
+            <div class="hotel-rating">4.8 ★</div>
+          </div>
+          <div class="hotel-info">
+            <h3>TARAPITH</h3>
+            <p>Beachfront | Pool | Wine Cellar | Dining</p>
+            <div class="hotel-buttons">
+              <button class="btn-view">
+                <a href="hotels/tarapith.html">View Details</a>
+              </button>
+              <button class="btn-book" onclick="confirmFunction()">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-image">
+            <img src="images/chilapata/8.jpg" alt="Chilapata" fetchpriority="low" loading="lazy" />
+            <div class="hotel-rating">4.6 ★</div>
+          </div>
+          <div class="hotel-info">
+            <h3>CHILAPATA</h3>
+            <p>Business Center | Gym | Rooftop Bar</p>
+            <div class="hotel-buttons">
+              <button class="btn-view">
+                <a href="hotels/chilapata.html">View Details</a>
+              </button>
+              <button class="btn-book" onclick="confirmFunction()">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-image">
+            <img src="images/rocky-island/4.jpg" alt="Rocky Island" fetchpriority="low" loading="lazy"/>
+            <div class="hotel-rating">4.9 ★</div>
+          </div>
+          <div class="hotel-info">
+            <h3>ROCKY ISLAND</h3>
+            <p>Scenic Views | Hiking | Restaurant</p>
+            <div class="hotel-buttons">
+              <button class="btn-view">
+                <a href="hotels/rocky-island.html">View Details</a>
+              </button>
+              <button class="btn-book" onclick="confirmFunction()">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-image">
+            <img src="images/sundarban/4.jpg" alt="Sundarban" fetchpriority="low" loading="lazy"/>
+            <div class="hotel-rating">4.7 ★</div>
+          </div>
+          <div class="hotel-info">
+            <h3>SUNDARBAN</h3>
+            <p>Unique Rooms | Garden | Exquisite View</p>
+            <div class="hotel-buttons">
+              <button class="btn-view">
+                <a href="hotels/sundarban.html">View Details</a>
+              </button>
+              <button class="btn-book" onclick="confirmFunction()">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </section>
+
+    <!--  SERVICES SECTION  -->
+    <section class="services" id="section-services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Food & Drinks</h3>
+          <p>
+            Indulge in our exquisite cuisine at our world-class restaurants.
+            From local delicacies to international favorites, we cater to every
+            palate.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-person-walking"></i>
+          <h3>Park</h3>
+          <p>
+            Experience nature's tranquility in our scenic walking park. Meander
+            through winding trails that refresh your spirit and invigorate your
+            senses.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Fitness Center</h3>
+          <p>
+            Stay fit during your stay with our state-of-the-art gym equipment.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-swimming-pool"></i>
+          <h3>Pool & Recreation</h3>
+          <p>
+            Dive into relaxation in our pristine pools or enjoy various
+            recreational activities suitable for all ages.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-briefcase"></i>
+          <h3>Business Center</h3>
+          <p>
+            Stay connected and productive with our fully-equipped business
+            center, offering all the amenities you need.
+          </p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-concierge-bell"></i>
+          <h3>Concierge Services</h3>
+          <p>
+            Let our expert concierge team assist you with reservations, tours,
+            and any special requests to enhance your stay.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--  REVIEWS SECTION  -->
+    <section class="customer-reviews" id="section-reviews">
+      <div class="review-header">
+        <h2 class="section-title" style="color: whitesmoke">
+          Voices of Our Guests
+        </h2>
+        <p class="subtitle">Experiences that speak volumes</p>
+      </div>
+
+      <div class="review-container">
+        <div class="review-grid">
+          <div class="review-card">
+            <div class="review-content">
+              <blockquote>
+                "Impeccable service! The staff went above and beyond. We'll
+                definitely be returning."
+              </blockquote>
+            </div>
+            <div class="review-footer">
+              <div class="reviewer">
+                <h3>Debesh Mukherjee</h3>
+              </div>
+              <div class="star-rating" aria-label="4 out of 5 stars">★★★★☆</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-content">
+              <blockquote>
+                "Comfortable rooms, decent dining. Met expectations, but there's
+                room for improvement."
+              </blockquote>
+            </div>
+            <div class="review-footer">
+              <div class="reviewer">
+                <h3>Biplab Roy</h3>
+              </div>
+              <div class="star-rating" aria-label="3 out of 5 stars">★★★☆☆</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-content">
+              <blockquote>
+                "Remarkable attention to detail. Every aspect of our stay was
+                flawlessly executed."
+              </blockquote>
+            </div>
+            <div class="review-footer">
+              <div class="reviewer">
+                <h3>Nilima Mitra</h3>
+              </div>
+              <div class="star-rating" aria-label="4 out of 5 stars">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="review-nav">
+        <button class="prev-btn" aria-label="Previous review">◄</button>
+        <button class="next-btn" aria-label="Next review">►</button>
+      </div> -->
+    </section>
+
+    <!--  TEAM SECTION  -->
+    <section id="section-team" class="team-section">
+      <h2 class="section-title">Managing Director</h2>
+      <div class="container">
+        <div class="team-profile">
+          <div class="team-card">
+            <div class="card-top">
+              <img
+                src="images/team/md.jpg"
+                alt="Managing Director - Swapan Kumar Das"
+                class="team-member-img"
+                fetchpriority="low"
+                loading="lazy"
+              />
+              <!-- <div class="social-buttons">
+                <a href="#" class="social-btn"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-btn"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </div> -->
+            </div>
+            <div class="card-bottom">
+              <h3 class="team-member-name">Swapan Kumar Das</h3>
+              <p class="team-member-bio">
+                Mr. Swapan brings years of executive leadership experience to
+                guide our hotel towards unparalleled guest satisfaction and
+                operational excellence.
+              </p>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3>About Our Managing Director</h3>
+            <p>
+              With over years of experience in the hospitality industry, Swapan
+              Kumar Das has been instrumental in shaping our hotel's vision and
+              success.
+            </p>
+            <ul>
+              <li>Oversees all aspects of hotel operations.</li>
+              <li>
+                Implements innovative strategies to enhance guest experiences.
+              </li>
+              <li>Leads a team of 200+ dedicated hospitality professionals.</li>
+              <li>
+                Committed to sustainable practices and community engagement.
+              </li>
+            </ul>
+            <p>
+              Under his leadership, our hotel has consistently achieved high
+              guest satisfaction scores and industry recognition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT SECTION  -->
+    <section id="section-contact" class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3 style="color: #fff">Get in Touch</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone" style="color: #fff"></i>
+              <p style="color: #fff">+91 9147389028</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope" style="color: #fff"></i>
+              <p style="color: #fff">amantranhotels@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt" style="color: #fff"></i>
+              <p style="color: #fff">
+                4, Dr Suresh Sarkar Road, Moulali, Amantran House(RTC House),
+                4th floor, Kolkata, West Bengal 700014
+              </p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form name="contact-amantran" action="https://formsubmit.co/amantranhotels@gmail.com" method="POST">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <input type="tel" name="Number" placeholder="Your Phone" required />
+              <input type="text" name="Subject" placeholder="Subject" required />
+              <textarea name="Message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="map-container">
+            <h3>Locate Us</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5594.359749721215!2d88.36361499713385!3d22.55998677381826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276fecd563a27%3A0x7f7424d103ae87eb!2sAmantran%20Group!5e0!3m2!1sen!2sin!4v1719995772643!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER SECTION  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Contact Us</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p style="text-align: center">+91 9147389028</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p style="text-align: center">amantranhotels@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                4, Dr Suresh Sarkar Road, Moulali, Amantran House(RTC House),
+                4th floor, Kolkata, West Bengal 700014
+              </p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#section-about">About Us</a></li>
+              <li><a href="#section-services">Services</a></li>
+              <li><a href="#section-team">Team</a></li>
+              <li><a href="#privacy" id="privacyLink">Privacy Policy</a></li>
+              <li><a href="#terms" id="termsLink">Terms & Conditions</a></li>
+              <li><a href="#section-contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-hotels">
+            <h3>Our Hotels</h3>
+            <ul>
+              <li><a href="hotels/tarapith.html">Tarapith</a></li>
+              <li><a href="hotels/chilapata.html">Chilapata</a></li>
+              <li><a href="hotels/rocky-island.html">Rocky Island</a></li>
+              <li><a href="hotels/sundarban.html">Sundarban</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=61561458937911"
+              class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/amantranhotelsresorts/"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <p id="copyright">&copy; 2024 Amantran Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--  CSS Files  -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/hotel-cards.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/back-to-top.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+
+    <!--  JavaScript Files  -->
+    <script src="js/main.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/video-play.js"></script>
+    <script src="js/modal-privacy.js"></script>
+    <script src="js/modal-terms.js"></script>
+
+    <!--BACK TO TOP BUTTON-->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
+
+    <!--MODAL SECTION - TERMS & CONDITIONS-->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Terms & Conditions</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>These are our Terms and Conditions:</p>
+
+          <p>
+            1. All reservations are subject to availability and confirmation.
+          </p>
+          <p>
+            2. Rates are per room, per night, and are subject to change without
+            notice.
+          </p>
+          <p>
+            3. Specific cancellation policies may vary by hotel and rate type.
+          </p>
+          <p>
+            4. The booking company is not responsible for any loss, damage, or
+            theft of personal belongings at the hotel. Guests are liable for any
+            damage caused to hotel property during their stay.
+          </p>
+          <p>
+            5. Personal information provided during booking will be used in
+            accordance with our privacy policy.
+          </p>
+          <p>
+            6. The company is not liable for any failure to perform its
+            obligations in conditions beyond its control (e.g., natural
+            disasters, government actions).
+          </p>
+          <p>
+            7. Any complaints should be raised with the hotel during the stay or
+            with our customer service team within 14 days of check-out.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  MODAL SECTION - PRIVACY POLICY  -->
+    <div id="privacyModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Privacy Policy</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>Our Privacy Policy:</p>
+          <p>
+            1. We respect your privacy and are committed to protecting your
+            personal data.
+          </p>
+          <p>
+            2. We collect only necessary information to provide our services.
+          </p>
+          <p>
+            3. Your data is securely stored and never shared with third parties
+            without your consent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
